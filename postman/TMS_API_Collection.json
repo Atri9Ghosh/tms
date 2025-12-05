@@ -1,0 +1,91 @@
+{
+  "info": {
+    "name": "TMS Backend API - Atri Ghosh",
+    "_postman_id": "98b13d00-889e-42b3-a112-8ff1a0d55bb5",
+    "description": "Postman collection for Transport Management System backend.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Create Load",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"shipperId\": \"SHPR-101\",\n  \"loadingCity\": \"Kolkata\",\n  \"unloadingCity\": \"Delhi\",\n  \"loadingDate\": \"2025-12-10T10:00:00Z\",\n  \"productType\": \"Electronics\",\n  \"weight\": 1200,\n  \"weightUnit\": \"KG\",\n  \"truckType\": \"Open\",\n  \"noOfTrucks\": 2\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/load",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["load"]
+        }
+      }
+    },
+    {
+      "name": "Get Load by ID",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://localhost:8080/load/{{loadId}}",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["load", "{{loadId}}"]
+        }
+      }
+    },
+    {
+      "name": "List Loads",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://localhost:8080/load?shipperId=SHPR-101&status=POSTED&page=0&size=10",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["load"],
+          "query": [
+            { "key": "shipperId", "value": "SHPR-101" },
+            { "key": "status", "value": "POSTED" },
+            { "key": "page", "value": "0" },
+            { "key": "size", "value": "10" }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Cancel Load",
+      "request": {
+        "method": "PATCH",
+        "url": {
+          "raw": "http://localhost:8080/load/{{loadId}}/cancel",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["load", "{{loadId}}", "cancel"]
+        }
+      }
+    },
+    {
+      "name": "Get Best Bids for Load",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://localhost:8080/load/{{loadId}}/best-bids",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["load", "{{loadId}}", "best-bids"]
+        }
+      }
+    }
+  ]
+}
