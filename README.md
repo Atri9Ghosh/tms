@@ -42,15 +42,6 @@ This project is designed following clean architecture, REST standards, and enter
 
 ---
 
-## 🏗️ Architecture Diagram
-
-```
-Controller → Service → Repository → PostgreSQL
-                ↓
-           DTO ↔ Entity
-```
-
----
 
 ## 🗄️ Database Schema Diagram
 
@@ -133,9 +124,6 @@ src/
  │   └── schema.sql (optional)
 postman/
  └── TMS_API_Collection.json
-screenshots/
- ├── db_schema.png
- └── jacoco_coverage.png
 README.md
 ```
 
@@ -258,13 +246,13 @@ target/site/jacoco/index.html
 
 ## 📊 JaCoCo Coverage Report
 
-![JaCoCo Coverage](screenshots/jacoco_coverage.png)
+![JaCoCo Coverage](assets/coverage.png)
 
 ---
 
 ## 📊 Database Schema Visualization
 
-![Database Schema](screenshots/db_schema.png)
+![Database Schema](assets/schema.png)
 
 ---
 
@@ -296,20 +284,3 @@ mvn clean verify
 
 This project is licensed under the MIT License.
 
----
-
-## 👤 Author
-
-**Atri Ghosh**
-
----
-
-## 🤝 Contributing
-
-Contributions are welcome! Feel free to submit a Pull Request.
-
----
-
-## 📞 Support
-
-For support, open an issue on the GitHub repository.
