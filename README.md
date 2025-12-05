@@ -172,26 +172,27 @@ mvn spring-boot:run
 
 ---
 
-## 🧭 API Documentation
+## 📘 API Documentation
 
-### Swagger UI
-```
-http://localhost:8080/swagger-ui/index.html
-```
+### 📨 Postman Collection
 
-### Base URL
-```
-http://localhost:8080
-```
+The full API collection for this backend can be imported into Postman using the link below:
 
----
+👉 **Postman Collection (JSON):**  
+https://raw.githubusercontent.com/Atri9Ghosh/tms/main/postman/TMS_API_Collection.json
 
-## 📘 Postman Collection
+### 📥 Import Instructions
 
-Download or import collection from:
-
-👉 [TMS API Collection](https://raw.githubusercontent.com/Atri9Ghosh/tms/main/postman/TMS_API_Collection.json)
-
+1. Open Postman  
+2. Click **Import**  
+3. Paste URL above *or* upload the file manually from:
+4. You will now see the following API requests ready to use:
+- Create Load  
+- Get Load by ID  
+- List Loads  
+- Cancel Load  
+- Get Best Bids
+ 
 ---
 
 ## 📬 Key API Endpoints
