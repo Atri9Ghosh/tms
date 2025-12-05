@@ -278,9 +278,3 @@ mvn clean test
 mvn clean verify
 ```
 
----
-
-## 📝 License
-
-This project is licensed under the MIT License.
-
