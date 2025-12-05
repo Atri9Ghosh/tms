@@ -43,7 +43,7 @@ This project is designed following clean architecture, REST standards, and enter
 ---
 
 
-## 🗄️ Database Schema Diagram
+## 🗄️ Database Schema
 
 ```
 ┌──────────────────────────┐
@@ -100,7 +100,7 @@ This project is designed following clean architecture, REST standards, and enter
 | ORM | JPA + Hibernate |
 | DB | PostgreSQL 18 |
 | Validation | Spring Boot Starter Validation |
-| Documentation | Swagger / OpenAPI |
+| Documentation | OpenAPI |
 | Testing | JUnit 5, Mockito |
 | Build Tool | Maven |
 | Logging | SLF4J + Logback |
